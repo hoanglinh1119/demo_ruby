@@ -1,0 +1,21 @@
+<%= stylesheet_link_tag "sign_in" %>
+<body class=" text-center">
+<form class="form-signin" action="<%= sign_up_path %>" method="post">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <img class="mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="email" id="inputEmail" class="form-control" name="user[email]" placeholder="Email address" required="" autofocus="">
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" name="user[password]">
+  <label for="inputPassword" class="sr-only">number phone</label>
+  <input type="number" id="inputNumberPhone" class="form-control" placeholder="number phone" required="" name="user[number_phone]">
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+  <p class="mt-5 mb-3 text-muted">© 2017-2020</p>
+</form>
+</body>
